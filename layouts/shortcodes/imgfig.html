@@ -1,0 +1,8 @@
+<figure class="figure">
+    {{ $url := .Get 0 }}
+    {{ if not (findRE "^(/|http(s?)://)" $url) }}
+        {{ $url = ($.Page.Resources.GetMatch $url).RelPermalink }}
+    {{ end }}
+    <a href="{{ $url }}"><img src="{{ $url }}" alt="{{ .Get 1 }}" class="figure-img img-fluid"></a>
+    {{ with .Get 1 }}<figcaption class="figure-caption">{{ . }}</figcaption>{{ end }}
+</figure>

@@ -1,0 +1,42 @@
+<h2 style="text-align: center;">{{ .Get "title" }}</h2>
+<center>
+{{ if .Get "pdf" }}
+  <a href="{{ .Get "pdf" }}" target="\_blank"><img src="{{ .Get "src" | safeURL }}" alt="rbf_pic" /></a>
+{{ else }}
+    <img src="{{ .Get "src" | safeURL }}" alt="rbf_pic" />
+{{ end }}
+</center>
+
+<center>
+<small>
+<span style="font-style: italic;" >
+{{ if .Get "a1" }}
+	{{ if .Get "a1link" }}<a href="{{ .Get "a1link" }}">{{ .Get "a1" }}</a>
+	{{ else }} {{ .Get "a1" }} {{ end }}
+{{ end }}  
+{{ if .Get "a2" }}
+	{{ if .Get "a2link" }}<a href="{{ .Get "a2link" }}">{{ .Get "a2" }}</a>
+	{{ else }} {{ .Get "a2" }} {{ end }}
+{{ end }} 
+{{ if .Get "a3" }}
+	{{ if .Get "a3link" }}<a href="{{ .Get "a3link" }}">{{ .Get "a3" }}</a>
+	{{ else }} {{ .Get "a3" }} {{ end }}
+{{ end }} 
+{{ if .Get "a4" }}
+	{{ if .Get "a4link" }}<a href="{{ .Get "a4link" }}">{{ .Get "a4" }}</a>
+	{{ else }} {{ .Get "a4" }} {{ end }}
+{{ end }} 
+{{ if .Get "a5" }}
+	{{ if .Get "a5link" }}<a href="{{ .Get "a5link" }}">{{ .Get "a5" }}</a>
+	{{ else }} {{ .Get "a5" }} {{ end }}
+{{ end }} 
+</span></small>
+</center>
+<center><small><span style="font-style: italic;">{{ .Get "conference" }}</span></small></center>
+<center><small><span style="font-style: italic;" >
+{{ if .Get "pdf" }}<strong><a href="{{ .Get "pdf" }}" style="color:#f2aa74;">pdf</a></strong>{{ end }}
+{{ if .Get "video" }}<strong><a href="{{ .Get "video" }}" style="color:#f2aa74;">video</a></strong>{{ end }}
+{{ if .Get "webpage" }}<strong><a href="{{ .Get "webpage" }}" style="color:#f2aa74;">webpage</a></strong>{{ end }}
+</span></small>
+</center>
+<center><small>{{ .Get "abstract" }}</small></center>

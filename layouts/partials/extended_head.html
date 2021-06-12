@@ -1,0 +1,22 @@
+<!--
+To add an extended head section, please create
+`layouts/partials/extended_head.html` in your Hugo directory.
+-->
+
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}
+
+
+{{ $style := resources.Get "/publication_container.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<link rel="stylesheet" href="{{ "css/projectcard.css" | absURL }}">
+<link rel="stylesheet" href="{{ "css/smallprojectcard.css" | absURL }}">
+<link rel="stylesheet" href="{{ "css/faicon.css" | absURL }}">
+
+
+<script src="{{ "js/posts/polygon.js" | absURL }}"></script> 
+<script src="{{ "js/posts/two.min.js" | absURL }}"></script> 
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+

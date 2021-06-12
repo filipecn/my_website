@@ -1,0 +1,17 @@
+<div class="flip">
+    <div class="front" style="background-image: url({{.Get "frontimage"}})">
+    {{ if .Get "fronttitle" }}<h1 class="text-shadow">{{ .Get "fronttitle" }}</hi>{{ end }}
+    {{ if .Get "fronttext" }}<p>{{ .Get "fronttitle" }}</p>{{ end }}
+    </div>
+    {{ if .Get "backimage"}}
+    <div class="back" style="background-image: url({{.Get "backimage"}})">
+        {{ if .Get "backtitle" }}<a href="{{ .Get "link" }}"><h2>{{ .Get "backtitle" }}</h2></a>{{ end }}
+        {{ if .Get "backtext" }}<p>{{ .Get "backtext" }}</p>{{ end }}
+        </div>
+    {{ else }}
+    <div class="back">
+       {{ if .Get "backtitle" }}<a href="{{ .Get "link" }}"><h2>{{ .Get "backtitle" }}</h2></a>{{ end }}
+       {{ if .Get "backtext" }}<p>{{ .Get "backtext" }}</p>{{ end }}
+    </div>
+    {{ end }}
+</div>

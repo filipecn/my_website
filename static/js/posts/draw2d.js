@@ -1,0 +1,97 @@
+$( document ).ready(function() {
+var $window = $(window);
+// Make an instance of two and place it on the page.
+var elem = document.getElementById('myCanvas');
+var params = { width: 500, height: 200, autostart: true };
+var two = new Two(params).appendTo(elem);
+var background = two.makeGroup();
+var foreground = two.makeGroup();
+
+var grid = new GRID.Grid(two, 50, two.width / 2, two.height / 2);
+
+var polygon = new POLYGON.PolygonObject(two, POLYGON.createCircle(50, 3));
+polygon.anchors[0].translation.set(two.width / 2, two.height / 2);
+var polygon2 = new POLYGON.PolygonObject(two, POLYGON.createCircle(50, 4));
+polygon2.anchors[0].translation.set(two.width / 2, two.height / 2);
+
+var gjk = new GJK.Gjk(two, polygon, polygon2);
+
+background.add(gjk.group);
+background.add(gjk.simplexGroup);
+
+foreground.add(polygon.mainGroup);
+foreground.add(polygon2.mainGroup);
+
+two.update();
+
+addObject(polygon);
+addObject(polygon2);
+
+two.bind('update', function(frameCount) {
+  background.remove(gjk.group);
+  gjk.makeSet(two, polygon, polygon2);
+  background.add(gjk.group);
+}).play();
+
+function addObject(o) {
+  _.each(o.points, function(p) {
+    addInteractivity(p);
+  });
+
+  _.each(o.anchors, function(p) {
+    addInteractivity(p);
+  });
+}
+
+function addInteractivity(shape) {
+  var offset = shape.parent.translation;
+  var drag = function(e) {
+    e.preventDefault();
+    var x = e.pageX - offset.x - $('#myCanvas').offset().left;
+    var y = e.pageY - offset.y - $('#myCanvas').offset().top;
+    shape.translation.set(x, y);
+  };
+  var touchDrag = function(e) {
+    e.preventDefault();
+    var touch = e.originalEvent.changedTouches[0];
+    drag({
+      preventDefault: _.identity,
+      clientX: touch.pageX,
+      clientY: touch.pageY
+    });
+    return false;
+  };
+  var dragEnd = function(e) {
+    e.preventDefault();
+    $window
+      .unbind('mousemove', drag)
+      .unbind('mouseup', dragEnd);
+  };
+  var touchEnd = function(e) {
+    e.preventDefault();
+    $(window)
+      .unbind('touchmove', touchDrag)
+      .unbind('touchend', touchEnd);
+    return false;
+  };
+  $(shape._renderer.elem)
+    .css({
+      cursor: 'pointer'
+    })
+    .bind('mousedown', function(e) {
+      e.preventDefault();
+      $window
+        .bind('mousemove', drag)
+        .bind('mouseup', dragEnd);
+    })
+    .bind('touchstart', function(e) {
+      e.preventDefault();
+      $(window)
+        .bind('touchmove', touchDrag)
+        .bind('touchend', touchEnd);
+      return false;
+    });
+}
+
+
+});
