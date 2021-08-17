@@ -48,6 +48,8 @@ Everything can be done inside the application screen, from code editing to unifo
 
 {{< arts title="Vulkan" >}}
 
+TODO
+
 {{< arts title="Rust Experiments" >}}
 
 Small [projects](https://github.com/filipecn/rust-experiments) to help me get involved with the rust language. Right now I only have one :)
@@ -56,20 +58,22 @@ In order to get into rust I started implementing a ray tracer following Peter Sh
 
 ![](/img/projects/render.png)
 
-> I’ve also been packing everything I do into a set of libraries which eventually serve me as frameworks to new projects 
+> I’ve also been packing everything I do into a set of libraries that eventually serve me as frameworks to new projects 
 (and hopefully help anyone who might use them). 
 
+{{< arts title="hermes" >}}
 
-{{< arts title="ponos" >}}
+[Hermes](https://github.com/filipecn/hermes) is a C++ utility lib containing a wide range of classes and algorithms. It serves as a swiss-knife for several types of projects.
+Most of hermes features are also implemented in `CUDA`, which can be optionally enabled.
 
-[Ponos](https://github.com/filipecn/ponos) is a C++ utility lib containing a wide range of classes and algorithms. Currently ponos comprises the following pieces:
+ Currently hermes comprises the following pieces:
 * **Geometry**: points, vectors, matrices, transformations, intersection tests, quaternions, etc;
 
-* **Storage**: memory blocks, multi-dimensional arrays, array of structures;
+* **Storage**: memory blocks, multi-dimensional arrays, array of structures, texture memory regions;
 
 ```cpp
     // Example of an Array of Structures usage 
-    ponos::AoS aos;
+    hermes::AoS aos;
     auto vec3_field_id = aos.pushField<vec3>("v");
     auto f32_field_id = aos.pushField<f32>("f");
     aos.resize(4);
@@ -80,12 +84,12 @@ In order to get into rust I started implementing a ray tracer following Peter Sh
     }
 ```
 
-* **Numeric**: interpolation, differential operators, numerical grids;
+* **Numeric**: interpolation, differential operators, staggered grids, finite difference matrices;
 * **BLAS**: Linear Algebra stuff, PCG, RBF;
 * **Structures**: octree, BVH, half-edge meshes, morton code ordering; 
-* **Common**: file system (bash-like) methods, string utils;
+* **Common**: file system (bash-like) methods, string utils, reduce methods, marching cubes;
 
-and other utilities such as thread pools, colored console output, memory dump, fast sweep algorithms, etc. 
+and other utilities such as thread pools, colored console output, memory dumper, fast sweep algorithms, etc. 
 
 ## Comming up
 - [x] color struct fields in a memory dump inside the console.
@@ -94,6 +98,8 @@ and other utilities such as thread pools, colored console output, memory dump, f
 [Circe](https://github.com/filipecn/circe) is a graphics engine written on top of OpenGL (and Vulkan in the future).
 Initially, the goal was just to produce some lib to help me on building visualizations of my research data, 
 but now there is a lot more I can do with it than I previously expected :)
+
+![](/img/projects/shadows.png)
 
 That is what Circe can provide for now:
 * **UI**: imgui integration, gizmos, trackball, reference grids;
@@ -114,17 +120,4 @@ and other useful utilities such as color palettes, mesh loading, primitive inter
 - [x] Stack and Double Stack Allocators 
 - [x] mem singleton 
 - [ ] add memory contexts
-
-{{< arts title="hermes" >}}
-[Hermes](https://github.com/filipecn/hermes) should be a version of ponos for CUDA. However there is not much done yet.
-
-* **Geometry**: bbox, matrix, point;
-* **Common**: reduce methods, marching cubes;
-* **Numeric**: interpolation, staggered grids, finite difference matrices;
-* **Storage**: memory blocks, arrays, texture memory regions;
-
-
-## Comming up
-
-
 
