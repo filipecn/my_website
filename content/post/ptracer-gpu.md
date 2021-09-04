@@ -5,7 +5,7 @@ date = "2021-07-04"
 # cover = "hello.jpg"
 description = "First thoughts on how pixels will be grouped and rendered."
 tags = ["rendering", "gpu"]
-# toc = true
+toc = true
 draft = false
 +++
 
@@ -54,7 +54,7 @@ region of 6x6 pixels.
 
 {{<image src="/img/posts/pbrt-cuda/tiles.svg" position="center">}}
 
-Each super tile is sent separately to the GPU and all its tiles are rendered in parallel. The CPU `main` now becomes:
+Each super tile is sent separately to the GPU and all its tiles are rendered in parallel. The CPU `main` code now becomes:
 ```cpp
 // Subdivide image into tiles
 auto tiles = generateTiles(image);
@@ -65,10 +65,10 @@ for(auto super_tile : super_tiles)
     renderRegion(super_tile);
 ```
 
-On my next post I'll talk about how tiles are actually processed and how rays are generated.
-
 ## Notes
 - For now I'll keep things simple. I want to make things work first and only then make things better.
 - Memory usage is actually the central point of the whole thing. It will dictates how our threads will access the scene elements 
 and limit the size of tiles. Memory access has a huge impact in efficiency and I believe there are lots of
 cool ideas to experiment with shared and texture memories. But for now, let's go easy and simple.
+
+>The [next]({{< ref "/post/ptracer-gpu2" >}}) post talks about how tiles are actually processed and how pixel samples are generated.
