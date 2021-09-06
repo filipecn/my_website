@@ -88,7 +88,7 @@ containing the sizes of the sample arrays stored in each _pixel sample_ followed
 Each pool item can serve all the memory used by a tile for example. 
 
 ## Stratified Sampler
-I implemented the `StratifiedSampler`, which subdivides the sampling region (pixel area) by a regular grid and generates a 
+I implemented the `StratifiedSampler`, which subdivides the sampling region (pixel area) with a regular grid and generates a 
 sample in each grid cell. A simple usage example goes like this:
 ```cpp
 // Here we define a 2x2 grid (4 samples), jittering and 3 sampling dimensions
