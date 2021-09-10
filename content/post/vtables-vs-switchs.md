@@ -3,7 +3,7 @@ title = "vtables vs switches"
 date = "2021-09-07"
 # author = "Lorem Ipsum"
 # cover = "/img/posts/pbrt-cuda/render.png"
-description = "Polymorphism or function pointers?!"
+description = "Polymorphism or function pointers?! A simple macro trick in the end :)"
 tags = ["c++"]
 # toc = true
 draft = false
@@ -104,7 +104,9 @@ int main() {
     std::vector<Letter> letters(n);
     for(int i = 0; i < n; ++i)
         switch(std::rand() % 26) {
-            case 0: letters[i].ptr = new A(); break;
+            case 0: letters[i].type = LetterType::A; 
+                    letters[i].ptr = new A();   
+                    break;
             ...
         }
 
@@ -133,11 +135,39 @@ I run a bunch of times each program above and I got the following times (`start`
 | Switch       | 55   |
 
 Well there is a difference there, switches turned out to be almost 3x faster than virtual functions. 
-However, that can't be taken as a conclusion or truth! 
+However, that can't be taken as a conclusion or truth, I did it for curiosity! 
+
 Each program is particular on its own and different compilers will optimize your code in different manners.
-In the end of the day this kind of design will be good or bad to you, it really depends on so many things
+In the end of the day this kind of design will be good or bad to you, since it depends on lots of things, 
 that is hard to come up with a rule of thumb here. 
 
-Each solution has its pros and cons. You need to understand the distribution and size of you data, 
-access patterns and much more. It is hard indeed, software is complex! Nevertheless, 
-question your code from time to time :)
+>Each solution has its pros and cons. You need to understand the distribution and size of you data, access patterns and much more in order to balance your design with the efficiency of you code. It is hard indeed, software is complex! Nevertheless, question your code from time to time is a good habit :)
+
+## Bonus
+The switch solution can quickly become very verbose and tedious to code, and the situation gets
+worse if you have multi-levels of these type of classes. A simple way to 
+make things a little better is to use macros. 
+
+You can create a macro to cast the pointer to you and provide you a pointer of the correct type
+so you can use as you like. For example, in our _alphabet_ case:
+
+```cpp
+#define CAST_LETTER(LETTER, PTR, CODE) \
+{                              \
+  switch(LETTER.type) { \
+    case LetterType::A : { auto* PTR = (A*)LETTER.ptr; CODE break; } \
+    ...
+    case LetterType::Z : { auto* PTR = (Z*)LETTER.ptr; CODE break; } \
+  }\
+}
+```
+
+The for ends up like this:
+```cpp 
+for(int i = 0; i < n; ++i)
+  CAST_LETTER(letters[i], ptr, {
+      output += ptr->spell();
+      });
+```
+
+
