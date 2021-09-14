@@ -46,10 +46,6 @@ Everything can be done inside the application screen, from code editing to unifo
 - [ ] Load obj files.
 
 
-{{< arts title="Vulkan" >}}
-
-TODO
-
 {{< arts title="Rust Experiments" >}}
 
 Small [projects](https://github.com/filipecn/rust-experiments) to help me get involved with the rust language. Right now I only have one :)
@@ -95,11 +91,13 @@ and other utilities such as thread pools, colored console output, memory dumper,
 - [x] color struct fields in a memory dump inside the console.
 
 {{< arts title="circe" >}}
-[Circe](https://github.com/filipecn/circe) is a graphics engine written on top of OpenGL (and Vulkan in the future).
+[Circe](https://github.com/filipecn/circe) is a graphics engine written on top of **OpenGL** (and **Vulkan**).
 Initially, the goal was just to produce some lib to help me on building visualizations of my research data, 
 but now there is a lot more I can do with it than I previously expected :)
 
 ![](/img/projects/shadows.png)
+
+{{< flipcard fronttitle="" backtitle="" backtext="" link="" frontimage="/img/vulkan.gif" backimage="/img/vvk.gif">}}
 
 That is what Circe can provide for now:
 * **UI**: imgui integration, gizmos, trackball, reference grids;

@@ -20,4 +20,6 @@ I use this website to share my knowledge and ideas. Hopefully, the content might
 {{< flipcard fronttitle="Vulkan" backtitle="Rust" backtext="" link="projects" frontimage="img/vulkan.gif" backimage="img/render.png">}}
 {{< flipcard fronttitle="CUDA" backtitle="TODO" backtext="todo" link="projects" frontimage="img/hermes.jpg" >}}
 
+---
 
+### Recent blog posts

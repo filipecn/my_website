@@ -61,6 +61,13 @@
         {{ end }}
       </div>
     {{ end }}
+
+    
+
+    {{ range ( where .Site.RegularPages "Type" "post" | first 10 ) }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{end}}
+
     {{ partial "pagination.html" . }}
   </div>
 {{ end }}
