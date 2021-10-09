@@ -36,7 +36,7 @@ struct Shape {
   hermes::Transform o2w;                 //!< object space to world space transform
   hermes::Transform w2o;                 //!< world space to object space transform
   hermes::bbox3 bounds;                  //!< world space bounds
-  void *primitive_data{nullptr};         //!< pointer to the child
+  void *shape_data{nullptr};         //!< pointer to the child
   ShapeType type{ShapeType::CUSTOM};     //!< child type
   shape_flags flags{shape_flags::NONE};  //!< some useful flags
 };
@@ -52,7 +52,7 @@ for (auto shape : shapes) {
   switch (shape.type) {
     case ShapeType::SPHERE:
       // cast pointer properly
-      reinterpret_cast<Sphere*>(shape.primitive_data)->intersect(...);
+      reinterpret_cast<Sphere*>(shape.shape_data)->intersect(...);
       break;
     case ShapeType::MESH: ... break;
     case ShapeType::CUSTOM: ... break;
