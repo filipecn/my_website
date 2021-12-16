@@ -127,7 +127,7 @@ the type of each object and its pointer into the _base_ class object. Now I have
 with a `switch` each array element and cast the pointer to the correct type before calling 
 the `spell` function.
 
-I run a bunch of times each program above and I got the following times (`start` - `end` in each code) in average:
+I ran a bunch of times each program above and I got the following times (`start` - `end` in each code) in average:
 
 | Solution     | time (ms) |
 |--------------|--------|
