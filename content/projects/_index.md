@@ -95,12 +95,10 @@ and other utilities such as thread pools, colored console output, memory dumper,
 Initially, the goal was just to produce some lib to help me on building visualizations of my research data, 
 but now there is a lot more I can do with it than I previously expected :)
 
-![](/img/projects/shadows.png)
-
-{{< flipcard fronttitle="" backtitle="" backtext="" link="" frontimage="/img/vulkan.gif" backimage="/img/vvk.gif">}}
-{{< flipcard fronttitle="" backtitle="" backtext="" link="" frontimage="/img/projects/shadows.gif" backimage="/img/vvk.gif">}}
-{{< flipcard fronttitle="" backtitle="" backtext="" link="" frontimage="/img/projects/picking.gif" backimage="/img/vvk.gif">}}
-{{< flipcard fronttitle="" backtitle="" backtext="" link="" frontimage="/img/projects/deferred.gif" backimage="/img/vvk.gif">}}
+{{< flipcard fronttitle="Vulkan" backtitle="" backtext="" link="" frontimage="/img/vulkan.gif" backimage="/img/vvk.gif">}}
+{{< flipcard fronttitle="Shadows" backtitle="" backtext="" link="" frontimage="/img/projects/shadows.gif" backimage="/img/vvk.gif">}}
+{{< flipcard fronttitle="GPU picking" backtitle="" backtext="asd" link="" frontimage="/img/projects/picking.gif" backimage="/img/vvk.gif">}}
+{{< flipcard fronttitle="Deferred Rendering" backtitle="" backtext="" link="" frontimage="/img/projects/deferred.gif" backimage="/img/projects/instanced.gif">}}
 
 That is what Circe can provide for now:
 * **UI**: imgui integration, gizmos, trackball, reference grids;
