@@ -9,8 +9,12 @@ I'm currently a PhD candidate in Computer Science researching the digital animat
 
 I use this website to share my knowledge and ideas. Hopefully, the content might help or inspire someone. Of course, any suggestions, comments, and opinions are very welcome. **Thanks for reading!**
 
+---
 
+Currently, my main repositories are:
 
+- [hermes](https://filipecn.github.io/hermes/) - A multi-purpose library written in `C++`/`CUDA` 
+- [circe](https://filipecn.github.io/circe/) - A minimalist framework for `OpenGL` (and `Vulkan`) based applications.
 
 ---
 

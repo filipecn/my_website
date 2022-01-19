@@ -59,7 +59,7 @@ In order to get into rust I started implementing a ray tracer following Peter Sh
 
 {{< arts title="hermes" >}}
 
-[Hermes](https://github.com/filipecn/hermes) is a C++ utility lib containing a wide range of classes and algorithms. It serves as a swiss-knife for several types of projects.
+[Hermes](https://filipecn.github.io/hermes/) is a C++ utility lib containing a wide range of classes and algorithms. It serves as a swiss-knife for several types of projects.
 Most of hermes features are also implemented in `CUDA`, which can be optionally enabled.
 
  Currently hermes comprises the following pieces:
@@ -91,12 +91,12 @@ and other utilities such as thread pools, colored console output, memory dumper,
 - [x] color struct fields in a memory dump inside the console.
 
 {{< arts title="circe" >}}
-[Circe](https://github.com/filipecn/circe) is a graphics engine written on top of **OpenGL** (and **Vulkan**).
+[Circe](https://filipecn.github.io/circe/) is a graphics engine written on top of **OpenGL** (and **Vulkan**).
 Initially, the goal was just to produce some lib to help me on building visualizations of my research data, 
 but now there is a lot more I can do with it than I previously expected :)
 
 {{< flipcard fronttitle="Vulkan" backtitle="" backtext="" link="" frontimage="/img/vulkan.gif" backimage="/img/vvk.gif">}}
-{{< flipcard fronttitle="Shadows" backtitle="" backtext="" link="" frontimage="/img/projects/shadows.gif" backimage="/img/vvk.gif">}}
+{{< flipcard fronttitle="Shadows" backtitle="" backtext="" link="" frontimage="/img/projects/shadows.gif" backimage="/img/projects/profiler.gif">}}
 {{< flipcard fronttitle="GPU picking" backtitle="" backtext="instance picking" link="" frontimage="/img/projects/picking.gif" backimage="/img/projects/instancepicking.gif">}}
 {{< flipcard fronttitle="Deferred Rendering" backtitle="" backtext="" link="" frontimage="/img/projects/deferred.gif" backimage="/img/projects/instanced.gif">}}
 
