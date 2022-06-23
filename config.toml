@@ -39,6 +39,8 @@ paginate = 5
   math = true
   
   googleAnalytics = "UA-85882787-1"
+  
+  googleAnalyticsID = "320534508"
 
   buildDrafts = false
 
