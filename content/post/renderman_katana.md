@@ -65,6 +65,16 @@ If everything works fine, you should find the `*.so` files in `/my/location/open
 
 Hopefully your login should work now!
 
+### Arch Linux
+In Arch I got an extra error when running `prman`:
+```shell
+...libtinfo.so.5: ... No such file or directory
+```
+In this case I installed the package from the AUR called `ncurses5-compat-libs`. When installing it with `makepkg` you may get an error about signature keys, in this case run
+```shell
+gpg --recv-keys <KEYID - See 'validpgpkeys' array in PKGBUILD>
+```
+
 ## Katana
 
 The installation of Katana itself didn't got me any trouble. However, Katana complained about 
