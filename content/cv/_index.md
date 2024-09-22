@@ -7,12 +7,12 @@ math: true
 Skills
 ======
   * C/C++ (prefered), Python
-  * OpenGL, CUDA, (a little of OpenFoam and OpenVDB)
-  * Recent interests: Vulkan, OptiX, Rust and Haskell
+  * OpenGL, CUDA, OpenFoam, OpenVDB, OpenUSD, Houdini's HDK
+  * Recent interests: Vulkan, M. Learning
 
 Education
 ======
-  * **PhD's degree in Computer Science** _(2017 - Present)_ \\
+  * **PhD's degree in Computer Science** _(2017 - 2024)_ \\
 	  _Institute of Mathematics and Computer Science (ICMC)_ \\
 	  _University of São Paulo (USP), São Carlos, São Paulo, Brazil_
   * **Master's degree in Computer Science** _(2013 - 2016)_\\
@@ -24,6 +24,11 @@ Education
 
 Professional Experience
 ======
+  * RnD Software Engineer at Blizzard Entertainment** _(Jan 2023 - Present)_ \\
+  Worked on C++ 3D tools for _cinematics_ at Blizzard Animation: \\
+    - Optimization and extension of the proprietary hair system, including the re-design of data structures, research of interpolation methods, and implementation of visual debugging tools; \\
+    - Houdini and Katana plugin C++ development; \\
+    - Integration of OpenUSD into existing code. \\
   * **Software Engineering Intern at Google Inc. (YouTube)** _(Jan 2016 - Mar 2016)_ \\
   Worked on 360$^o$ video support on Sony's PlayStation 4 VR.
 
@@ -31,6 +36,7 @@ Research Experience
 ======
 * **Digital Animation of Powder Snow Avalanches** _(2017 - Present)_ \\
     Graduate Research supported by FAPESP \\
+    Applied CFD to solve geophysical equations to simulate avalanches and produce animation data. Developed in C++ with OpenFOAM.\\
 	Supervisor: Afonso Paiva
 * **RBF Liquids: An Adaptive PIC Solver Using RBF-FD** _(2018 - 2020)_ \\
 	Published: _ACM Siggraph Asia 2020 | ACM Transactions on Graphics_
