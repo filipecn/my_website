@@ -24,7 +24,7 @@ Education
 
 Professional Experience
 ======
-  * RnD Software Engineer at Blizzard Entertainment** _(Jan 2023 - Present)_ \\
+  * **RnD Software Engineer at Blizzard Entertainment** _(Jan 2023 - Present)_ \\
   Worked on C++ 3D tools for _cinematics_ at Blizzard Animation: \\
     - Optimization and extension of the proprietary hair system, including the re-design of data structures, research of interpolation methods, and implementation of visual debugging tools; \\
     - Houdini and Katana plugin C++ development; \\
