@@ -34,9 +34,13 @@ Professional Experience
 
 Research Experience
 ======
-* **Digital Animation of Powder Snow Avalanches** _(2017 - Present)_ \\
+* **Digital Animation of Powder Snow Avalanches** _(2017 - Present)_ 
+
     Graduate Research supported by FAPESP \\
-    Applied CFD to solve geophysical equations to simulate avalanches and produce animation data. Developed in C++ with OpenFOAM.\\
+    - Applied CFD to solve geophysical equations to simulate avalanches and produce animation data.  
+
+    - Developed in C++ with OpenFOAM.\\
+    - The model accepts real terrain data and procedural meshes. \\
 	Supervisor: Afonso Paiva
 * **RBF Liquids: An Adaptive PIC Solver Using RBF-FD** _(2018 - 2020)_ \\
 	Published: _ACM Siggraph Asia 2020 | ACM Transactions on Graphics_
