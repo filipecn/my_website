@@ -26,12 +26,9 @@ Professional Experience
 ======
   * **RnD Software Engineer at Blizzard Entertainment** _(Jan 2023 - Present)_ 
 
-  Worked on C++ 3D tools for _cinematics_ at Blizzard Animation: 
-
+  Worked on C++ 3D tools for _cinematics_ at Blizzard Animation: \\
     - Optimization and extension of the proprietary hair system, including the re-design of data structures, research of interpolation methods, and implementation of visual debugging tools; 
-
     - Houdini and Katana plugin C++ development; 
-
     - Integration of OpenUSD into existing code. 
 
   * **Software Engineering Intern at Google Inc. (YouTube)** _(Jan 2016 - Mar 2016)_ 
@@ -41,10 +38,12 @@ Professional Experience
 Research Experience
 ======
 * **Digital Animation of Powder Snow Avalanches** _(2017 - Present)_ 
-    Graduate Research supported by FAPESP 
+
+    Graduate Research supported by FAPESP \\
     - Applied CFD to solve geophysical equations to simulate avalanches.  
     - The model accepts real terrain data and procedural meshes. 
     - Developed in C++ with OpenFOAM.
+
 	Supervisor: Afonso Paiva
 * **RBF Liquids: An Adaptive PIC Solver Using RBF-FD** _(2018 - 2020)_ 
 
