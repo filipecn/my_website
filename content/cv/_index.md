@@ -38,7 +38,8 @@ Research Experience
     - Graduate Research supported by FAPESP 
     - Applied `CFD` to solve `geophysical equations` to simulate avalanches
     - Processed `geometric models` of real and procedural terrain
-    - Developed data structures for simulation `meshes` and `volumetric` data conversion.
+    - Developed data structures for simulation `meshes` and `volumetric` data conversion
+    - Developed a method for converting `non-regular grid` volumetric data into `OpenVDB` data
     - Developed in `C++` with `OpenFOAM`
     - Supervisor: Afonso Paiva
 * **RBF Liquids: An Adaptive PIC Solver Using RBF-FD** _(2018 - 2020)_ 
@@ -48,7 +49,7 @@ Research Experience
     - Developed an `PIC` based method using `RBF-FD`
 * **Multimaterial Fluid Simulation for Computer Graphics** _(Sep 2014 - Feb 2015)_ 
     - _Visiting Scholar at University of Waterloo (UW), Waterloo, Ontario, Canada_
-    - Developed methods to geometrically solve the `dynamic intersection of triangular meshes`.
+    - Developed methods to geometrically solve the `dynamic intersection of triangular meshes`
     - Such algorithms were used to handle the interaction between different fluids.
     - Supervisor: Christopher Batty
 * **Approximating implicit curves on plane and surface triangulations with affine arithmetic (AA)** _(2013 - 2014)_ 
