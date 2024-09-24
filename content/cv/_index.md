@@ -25,6 +25,7 @@ Education
 Professional Experience
 ======
   * **RnD Software Engineer at Blizzard Entertainment** _(Jan 2023 - Present)_ 
+
     Worked on C++ 3D tools for _cinematics_ at Blizzard Animation: \\
     - Optimization and extension of the proprietary hair system, including the re-design of data structures, research of interpolation methods, and implementation of visual debugging tools; 
     - Houdini and Katana plugin C++ development; 
@@ -59,6 +60,7 @@ Research Experience
 
 	Published: _Proceedings XXV SIBGRAPI Conference on Graphics, Patterns and Images. IEEE Press: IEEE Press, 2012. p. 94-101._ 
 * **Reliable polygonal approximation of implicit curves** _(2011 - 2012)_
+
     Undergraduate Research supported by FAPESP
 
 	Supervisor: Afonso Paiva
