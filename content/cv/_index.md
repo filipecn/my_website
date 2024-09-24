@@ -43,7 +43,7 @@ Research Experience
     - Developed in `C++` with `OpenFOAM`
     - Supervisor: Afonso Paiva
 * **RBF Liquids: An Adaptive PIC Solver Using RBF-FD** _(2018 - 2020)_ 
-    - Published: `_ACM Siggraph Asia 2020 | ACM Transactions on Graphics_`
+    - Published: _ACM Siggraph Asia 2020 | ACM Transactions on Graphics_
     - Research on `fluid simulation`
     - Developed a `dynamic adaptive spatial data structure`
     - Developed an `PIC` based method using `RBF-FD`
@@ -53,11 +53,11 @@ Research Experience
     - Such algorithms were used to handle the interaction between different fluids.
     - Supervisor: Christopher Batty
 * **Approximating implicit curves on plane and surface triangulations with affine arithmetic (AA)** _(2013 - 2014)_ 
-    - Published: `_Computers & Graphics Journal (CAG), Volume 40, Pages 36–48._`
+    - Published: _Computers & Graphics Journal (CAG), Volume 40, Pages 36–48._
     - Developed a `spatially and geometrically adaptive method` over `3-dimensional triangulations`
     - The mesh is adapted to the implicit object so a reliable intersection is generated
 * **Approximating implicit curves on triangulations with AA** _2012_ 
-    - Published: `_Proceedings XXV SIBGRAPI Conference on Graphics, Patterns and Images. IEEE Press: IEEE Press, 2012. p. 94-101._`
+    - Published: _Proceedings XXV SIBGRAPI Conference on Graphics, Patterns and Images. IEEE Press: IEEE Press, 2012. p. 94-101._
     - Applied an adaptive method based on `Affine Arithmetic` computations
 * **Reliable polygonal approximation of implicit curves** _(2011 - 2012)_
     - Undergraduate Research supported by FAPESP
