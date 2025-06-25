@@ -29,6 +29,7 @@ Professional Experience
     - `Optimization` and extension of the proprietary `hair system`, including the re-design of `data structures`, `research of interpolation methods`, and implementation of `visual debugging tools`
     - `Houdini` and Katana plugin `C++` development
     - Integration of `OpenUSD` into existing code
+    - Contributed animations such as [Diablo 4 - Vessel of Hatred](https://www.youtube.com/watch?v=mtM0WpHEjWU) and [WoW - The War Within Announce Cinematic](https://www.youtube.com/watch?v=o03STclgxSc), and [WoW - The War Within Official Cinematic](https://www.youtube.com/watch?v=zYdFLUBjwCU)
   * **Software Engineering Intern at Google Inc. (YouTube)** _(Jan 2016 - Mar 2016)_ 
     - Worked on 360^o video support on Sony's PlayStation 4 `VR`
 
