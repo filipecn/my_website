@@ -6,7 +6,7 @@ math: true
 
 Skills
 ======
-  * `C`, `C++` (proficient), `Python`
+  * `C`, `C++` (proficient), `Python`, `Rust`
   * `OpenGL`, `CUDA`, `OpenFoam`, `OpenVDB`, `OpenUSD`, `Houdini`'s `HDK`
   * Recent interests: `Vulkan`, `M. Learning`
 
@@ -24,7 +24,7 @@ Education
 
 Professional Experience
 ======
-  * **RnD Software Engineer at Blizzard Entertainment** _(Jan 2023 - Present)_ 
+  * **RnD Software Engineer at Blizzard Entertainment** _(Jan 2023 - Nov 2024)_ 
     - Worked on C++ 3D tools for _cinematics_ at Blizzard Animation
     - `Optimization` and extension of the proprietary `hair system`, including the re-design of `data structures`, `research of interpolation methods`, and implementation of `visual debugging tools`
     - `Houdini` and Katana plugin `C++` development
@@ -34,7 +34,8 @@ Professional Experience
 
 Research Experience
 ======
-* **Digital Animation of Powder Snow Avalanches** _(2017 - Present)_ 
+* **Digital Animation of Powder Snow Avalanches** _(2017 - 2023)_ 
+    - [Published: _ACM Siggraph 2025 | ACM Transactions on Graphics_](https://dl.acm.org/doi/10.1145/3730862)
     - Graduate Research supported by FAPESP 
     - Applied `CFD` to solve `geophysical equations` to simulate avalanches
     - Processed `geometric models` of real and procedural terrain
@@ -43,7 +44,7 @@ Research Experience
     - Developed in `C++` with `OpenFOAM`
     - Supervisor: Afonso Paiva
 * **RBF Liquids: An Adaptive PIC Solver Using RBF-FD** _(2018 - 2020)_ 
-    - Published: _ACM Siggraph Asia 2020 | ACM Transactions on Graphics_
+    - [Published: _ACM Siggraph Asia 2020 | ACM Transactions on Graphics_](https://dl.acm.org/doi/10.1145/3414685.3417794)
     - Research on `fluid simulation`
     - Developed a `dynamic adaptive spatial data structure`
     - Developed an `PIC` based method using `RBF-FD`
@@ -53,11 +54,11 @@ Research Experience
     - Such algorithms were used to handle the interaction between different fluids.
     - Supervisor: Christopher Batty
 * **Approximating implicit curves on plane and surface triangulations with affine arithmetic (AA)** _(2013 - 2014)_ 
-    - Published: _Computers & Graphics Journal (CAG), Volume 40, Pages 36–48._
+    - [Published: _Computers & Graphics Journal (CAG), Volume 40, Pages 36–48._](https://www.sciencedirect.com/science/article/pii/S0097849314000144?via%3Dihub)
     - Developed a `spatially and geometrically adaptive method` over `3-dimensional triangulations`
     - The mesh is adapted to the implicit object so a reliable intersection is generated
 * **Approximating implicit curves on triangulations with AA** _2012_ 
-    - Published: _Proceedings XXV SIBGRAPI Conference on Graphics, Patterns and Images. IEEE Press: IEEE Press, 2012. p. 94-101._
+    - [Published: _Proceedings XXV SIBGRAPI Conference on Graphics, Patterns and Images. IEEE Press: IEEE Press, 2012. p. 94-101._](https://www.computer.org/csdl/proceedings-article/sibgrapi/2012/4829a094/12OmNx7XGZ5)
     - Applied an adaptive method based on `Affine Arithmetic` computations
 * **Reliable polygonal approximation of implicit curves** _(2011 - 2012)_
     - Undergraduate Research supported by FAPESP
