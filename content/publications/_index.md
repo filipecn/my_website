@@ -19,7 +19,7 @@ a3link="http://www.icmc.usp.br/%7Eapneto/" a3="Afonso Paiva" >}}
 {{< papercard  title="Digital 3D Animation of Powder-Snow Avalanches (thesis)" 
 abstract="The paper above was the result of the work I did during my PhD. In my thesis you can encounter a quite extensive discussion on the subject with a complete revision of methods and many more details."
 conference="Doctoral thesis defended at ICMC-USP 2024" 
-pdf="https://filipecn.github.io/files/phd_thesis_icmc_usp_filipe_2024_compressed.pdf" 
+pdf="../files/phd_thesis_icmc_usp_filipe_2024_compressed.pdf" 
 a1="Filipe Nascimento" 
 >}}
 
