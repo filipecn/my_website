@@ -16,9 +16,20 @@ a2link="https://sites.google.com/icmc.usp.br/fssousa/home" a2="Fabricio S. Sousa
 a3link="http://www.icmc.usp.br/%7Eapneto/" a3="Afonso Paiva" >}}
 
 ---
+{{< papercard  title="Digital 3D Animation of Powder-Snow Avalanches" 
+abstract="Short version of the SIGGRAPH paper listed above."
+conference="38th Conference on Graphics, Patterns and Images -- SIBGRAPI 2025" 
+doi="https://sol.sbc.org.br/index.php/sibgrapi_estendido/article/view/38265"
+src="../img/hrbf.png" 
+pdf="../files/psa_anim_sibgrapi.pdf" 
+a1="Filipe Nascimento" 
+a2link="http://www.icmc.usp.br/%7Eapneto/" a3="Afonso Paiva" >}}
+
+---
 {{< papercard  title="Digital 3D Animation of Powder-Snow Avalanches (thesis)" 
-abstract="The paper above was the result of the work I did during my PhD. In my thesis you can encounter a quite extensive discussion on the subject with a complete revision of methods and many more details."
+abstract="In my thesis you can encounter a quite extensive discussion on the subject with a complete revision of methods and many more details."
 conference="Doctoral thesis defended at ICMC-USP 2024" 
+doi="https://www.teses.usp.br/teses/disponiveis/55/55134/tde-25062024-163222/pt-br.php"
 pdf="../files/phd_thesis_icmc_usp_filipe_2024_compressed.pdf" 
 a1="Filipe Nascimento" 
 >}}
@@ -30,9 +41,9 @@ abstract="We introduce a novel liquid simulation approach that combines a spatia
 conference="ACM Siggraph Asia 2020 | ACM Transactions on Graphics" 
 doi="https://dl.acm.org/doi/10.1145/3414685.3417794"
 src="../img/siggraph-2020.png" 
-pdf="https://rnakanishi.github.io/files/rbf-sa2020.pdf" 
+pdf="https://filipecn.github.io/rbf_pic/static/pdf/rbf_pic.pdf" 
 video="https://www.youtube.com/watch?v=JVt8NoF81uI" 
-webpage="https://rnakanishi.github.io/publications/rbf-liquids-adaptive-pic-solver-using-rbf/" 
+webpage="https://filipecn.github.io/rbf_pic/" 
 a1link="https://rnakanishi.github.io/" a1="Rafael Nakanishi" 
 a2="Filipe Nascimento" 
 a3link="https://www.campos.cc/" a3="Rafael Campos"
