@@ -24,6 +24,10 @@ Education
 
 Professional Experience
 ======
+  * **RnD Software Engineer at ARQGEN** _(Jan 2026 - Present)_ 
+    - Working on procedural generation and the development of geometric solutions for architectural projects.
+    - Model/Development of optimization methods
+    - RnD of geometric algorithms/structures
   * **RnD Software Engineer at Blizzard Entertainment** _(Jan 2023 - Nov 2024)_ 
     - Worked on C++ 3D tools for _cinematics_ at Blizzard Animation
     - `Optimization` and extension of the proprietary `hair system`, including the re-design of `data structures`, `research of interpolation methods`, and implementation of `visual debugging tools`
